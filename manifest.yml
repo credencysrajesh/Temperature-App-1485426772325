@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Temperature App
+  host: Temperature-App
+  disk_quota: 1024M
+  services:
+  - Temperature App-cloudantNoSQLDB
+  - availability-monitoring-auto
